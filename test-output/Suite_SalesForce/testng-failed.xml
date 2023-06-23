@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite_SalesForce]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test_LoginFunctionality(failed)">
+    <classes>
+      <class name="com.automation.tests.SFTestCases">
+        <methods>
+          <include name="setupForAfterMethod"/>
+          <include name="setupForTest"/>
+          <include name="setupForMethodTestScript"/>
+          <include name="ValidLoginToSalesForce"/>
+        </methods>
+      </class> <!-- com.automation.tests.SFTestCases -->
+    </classes>
+  </test> <!-- Test_LoginFunctionality(failed) -->
+</suite> <!-- Failed suite [Suite_SalesForce] -->
