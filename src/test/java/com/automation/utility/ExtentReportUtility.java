@@ -41,7 +41,7 @@ public class ExtentReportUtility {
 		
 	}
 	
-	public void startSingleTestExtentReport(String methodName ) {
+	public void createNewTest(String methodName ) {
 		testLogger = reports.createTest(methodName) ; 
 	}
 	

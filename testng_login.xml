@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteLogin">
+  <test thread-count="2" name="TestLogin" parallel="methods">
+ <classes>
+    <class name="com.automation.tests.LoginToSalesForce">
+      <methods>
+        <include name="loginWithBlankPassword" />
+        <include name="ValidLoginToSalesForce" />
+      </methods>
+    </class>
+ 
+  </classes>
+  </test> <!-- TestLogin -->
+</suite> <!-- SuiteLogin -->

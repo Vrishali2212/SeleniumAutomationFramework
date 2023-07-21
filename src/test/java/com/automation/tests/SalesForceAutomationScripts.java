@@ -1,6 +1,8 @@
 package com.automation.tests;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.Assert;
@@ -48,7 +50,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 		String actualTitle=getPageTitle();
 		System.out.println("Actual title = "+actualTitle);
 		String expectedTitle="Login | Salesforce";
-		Assert.assertEquals(actualTitle, expectedTitle);
+		AssertJUnit.assertEquals(actualTitle, expectedTitle);
 		log.info("Login page loaded") ; 
 		exreport.logExtentPass("Login Page loaded.");
 		PropertiesUtility propertiesUtility = new PropertiesUtility();
@@ -66,7 +68,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 		waitTillElementVisible(By.id("phSearchInput"));
 		String actualTitle1=getPageTitle();
 		String expectedTitle1="Home Page ~ Salesforce - Developer Edition";
-		Assert.assertEquals(actualTitle1, expectedTitle1);
+		AssertJUnit.assertEquals(actualTitle1, expectedTitle1);
 		exreport.logExtentPass("Login Successful.Logged in to Sales Force Home Page.");
 		System.out.println("-----------------------------------------------------------------------------") ;
 	}
@@ -79,7 +81,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 		String actualTitle=getPageTitle();
 		System.out.println("Actual title = "+actualTitle);
 		String expectedTitle="Login | Salesforce";
-		Assert.assertEquals(actualTitle, expectedTitle);
+		AssertJUnit.assertEquals(actualTitle, expectedTitle);
 		log.info("Login Page loaded.") ; 
 		exreport.logExtentPass("Login Page loaded.");
 		PropertiesUtility propertiesUtility = new PropertiesUtility();
@@ -99,7 +101,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 		WebElement actualErrMsgE = driver.findElement(actualErrMsg) ;
 		
 		
-		Assert.assertEquals(actualErrMsgE.getText(), expectedError) ; 
+		AssertJUnit.assertEquals(actualErrMsgE.getText(), expectedError) ; 
 		log.info("Test passed ") ; 
 		exreport.logExtentPass("loginWithBlankPassword");
 		
@@ -114,7 +116,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 		String actualTitle=getPageTitle();
 		System.out.println("Actual title = "+actualTitle);
 		String expectedTitle="Login | Salesforce";
-		Assert.assertEquals(actualTitle, expectedTitle);
+		AssertJUnit.assertEquals(actualTitle, expectedTitle);
 		log.info("Login page loaded") ; 
 		exreport.logExtentPass("Login Page loaded.");
 
@@ -141,7 +143,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 		waitTillElementVisible(By.id("phSearchInput"));
 		String actualTitle1=getPageTitle();
 		String expectedTitle1="Home Page ~ Salesforce - Developer Edition";
-		Assert.assertEquals(actualTitle1, expectedTitle1);
+		AssertJUnit.assertEquals(actualTitle1, expectedTitle1);
 		exreport.logExtentPass("Login Successful.Logged in to Sales Force Home Page.");
 		
 		// On the Salesforce home page
@@ -152,7 +154,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 		log.info("Logout clicked..");
 		Thread.sleep(5000);
 		
-		Assert.assertEquals("Login | Salesforce", getPageTitle()) ; 
+		AssertJUnit.assertEquals("Login | Salesforce", getPageTitle()) ; 
 		log.info("Logout successful.") ; 
 		exreport.logExtentPass("Logout succesful. ") ;
 		Thread.sleep(2000);
@@ -179,7 +181,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 		WebElement username =  driver.findElement( By.id("username")) ; 
 		String actualUsernameValue = username.getAttribute("value") ;
 		String expectedUsernameValue = myusername ; 
-		Assert.assertEquals(actualUsernameValue, expectedUsernameValue) ; 
+		AssertJUnit.assertEquals(actualUsernameValue, expectedUsernameValue) ; 
 		log.info("PASS >> Username present in username text box. Test case passed .") ;
 		exreport.logExtentPass("PASS >> Username present in username text box. Test case passed .") ;
 		
@@ -189,7 +191,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 	public static void forgotPasswordA() throws InterruptedException {
 		
 		waitTillElementVisible(By.id("username"));
-		Assert.assertEquals(getPageTitle(),LOGINPAGETITLE );
+		AssertJUnit.assertEquals(getPageTitle(),LOGINPAGETITLE );
 		exreport.logExtentPass("Login page loaded");
 		
 		
@@ -198,7 +200,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 		log.info("Forgot password link clicked. ") ; 
 		Thread.sleep(5000);
 		String expectedTitle ="Forgot Your Password | Salesforce" ;
-		Assert.assertEquals(expectedTitle, getPageTitle());
+		AssertJUnit.assertEquals(expectedTitle, getPageTitle());
 		log.info("Forgot password page opened.") ; 
 		exreport.logExtentPass("Forgot password page opened.");
 		
@@ -211,7 +213,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 		
 		Thread.sleep(2000);
 		String expectedTitle2 = "Check Your Email | Salesforce" ; 
-		Assert.assertEquals(getPageTitle(), expectedTitle2) ; 
+		AssertJUnit.assertEquals(getPageTitle(), expectedTitle2) ; 
 		log.info("ASS : Password reset message page is displayed. An email associated with the <username> account is sent.");
 		exreport.logExtentPass("ASS : Password reset message page is displayed. An email associated with the <username> account is sent") ; 
 		
@@ -219,7 +221,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 	}
 	@Test
 	public static void forgotPassword_B() {
-		Assert.assertEquals(getPageTitle(), LOGINPAGETITLE);
+		AssertJUnit.assertEquals(getPageTitle(), LOGINPAGETITLE);
 		exreport.logExtentPass("Login page loaded");
 		
 			 
@@ -236,7 +238,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 			String actualErrorText =  driver.findElement(By.id("error")).getText();
 			String expectedErrorText = "Please check your username and password. If you still can't log in, contact your Salesforce administrator." ;
 			println(expectedErrorText);
-			Assert.assertEquals(actualErrorText, expectedErrorText);
+			AssertJUnit.assertEquals(actualErrorText, expectedErrorText);
 			log.info("PASS: ") ; 
 			exreport.logExtentPass("PASS>> Expected error message appeared after entering invalid username and invalid password.");
 		
@@ -255,7 +257,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 		//String expectedProfileName = myusername;
 		String expectedProfileName="vrish ABCDE" ; 
 		println("Profile name displayed = "+actualProfileName) ; 
-		Assert.assertEquals(expectedProfileName, actualProfileName);
+		AssertJUnit.assertEquals(expectedProfileName, actualProfileName);
 		log.info("Profile name displayed = "+actualProfileName) ; 
 		exreport.logExtentPass("Profile name displayed = "+actualProfileName);
 		
@@ -292,7 +294,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 			
 			actulProfileMenus.add(acutalMenu) ; 
 			println(profileMenulist.get(i).getClass());	
-			Assert.assertEquals(expectedMenu, acutalMenu) ; 
+			AssertJUnit.assertEquals(expectedMenu, acutalMenu) ; 
 			log.info(">> PASS FOR menu no. "+i) ;
 			log.info("Expected menu item  = "+expectedMenu) ;
 			log.info("Actual menu item =" +acutalMenu );
@@ -373,7 +375,7 @@ public class SalesForceAutomationScripts extends SalesForceBase{
 				WebElement mypostE = driver.findElement(By.xpath("//div[@class='cxfeeditem feeditem'][1]//p")) ; 
 				String mypost = mypostE.getText();
 				log.info("Post "+mypost+" is seen on the page.") ; 
-				Assert.assertEquals(mypost, post) ; 
+				AssertJUnit.assertEquals(mypost, post) ; 
 				exreport.logExtentPass("Successfully, shared the post on  my profile page.") ; 
 	}
 	public static void uploadFile() throws AWTException, InterruptedException {
@@ -656,7 +658,7 @@ public static void UserMenuDropDownTC08() throws InterruptedException {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//li[@id='Account_Tab']")).click();
 		Thread.sleep(3000);
-		Assert.assertEquals(driver.getTitle(), "Accounts: Home ~ Salesforce - Developer Edition") ; 
+		AssertJUnit.assertEquals(driver.getTitle(), "Accounts: Home ~ Salesforce - Developer Edition") ; 
 		log.info("Accounts tab opened") ; 
 		exreport.logExtentInfo("Accounts tab opened") ; 
 		
@@ -682,7 +684,7 @@ public static void UserMenuDropDownTC08() throws InterruptedException {
 		driver.findElement(By.xpath("//div[@class='pbBottomButtons']//input[@name='save']")).click();
 		
 		String Actualaccname = driver.findElement(By.xpath("//div[@id='contactHeaderRow']//div[@class='textBlock']//h2")).getText();
-		Assert.assertEquals(expectedaccname, Actualaccname) ; 
+		AssertJUnit.assertEquals(expectedaccname, Actualaccname) ; 
 		exreport.logExtentPass("New account created" ) ; 
 		
 	}
@@ -704,7 +706,7 @@ public static void UserMenuDropDownTC08() throws InterruptedException {
 		
 		Select view = new Select(driver.findElement(By.xpath("//select[@name='fcf']")))  ; 
 		String currentview = view.getFirstSelectedOption().getText() ; 
-		Assert.assertEquals(currentview, viewname) ; 
+		AssertJUnit.assertEquals(currentview, viewname) ; 
 		exreport.logExtentPass("Given View name added and selected. ") ; 
 	
 	
@@ -850,7 +852,7 @@ Thread.sleep(10000);
 		WebElement reports = driver.findElement(By.xpath(("//div[@class='toolsContentLeft']//a[contains(text(),'Accounts with last activity > 30 days')]")));
 		reports.click();
 		log.info("Accounts with last activity > 30 days, clicked.");
-		Assert.assertEquals(driver.getTitle(), "Unsaved Report ~ Salesforce - Developer Edition");
+		AssertJUnit.assertEquals(driver.getTitle(), "Unsaved Report ~ Salesforce - Developer Edition");
 		log.info("Unsaved Report page opened");
 		
 		WebElement datefield=driver.findElement(By.xpath("//input[@id='ext-gen20']"));
@@ -939,7 +941,7 @@ Thread.sleep(10000);
 		
 		Thread.sleep(5000);
 		String oname = driver.findElement(By.xpath("//div[@class='content']//h2")).getText();
-		Assert.assertEquals(oname, myoppname) ; 
+		AssertJUnit.assertEquals(oname, myoppname) ; 
 		log.info("New Opportunity page is displayed with Opportunity details.") ; 
 		exreport.logExtentPass("New Opportunity page is displayed with Opportunity details.") ;
 		
@@ -960,7 +962,7 @@ Thread.sleep(10000);
 		log.info("Opportunity Pipeline clicked. ");
 		Thread.sleep(5000);
 		String pagetitle="Opportunity Pipeline ~ Salesforce - Developer Edition" ;
-		Assert.assertEquals(driver.getTitle(), pagetitle);
+		AssertJUnit.assertEquals(driver.getTitle(), pagetitle);
 		log.info("Opportunity pipelines page loaded. ") ; 
 		exreport.logExtentPass("Report Page with the Opportunities that are pipelined will be displayed.") ;
 		
@@ -1007,7 +1009,7 @@ Thread.sleep(10000);
 		Thread.sleep(5000);
 		
 		String pagetitle="Stuck Opportunities ~ Salesforce - Developer Edition" ;
-		Assert.assertEquals(driver.getTitle(), pagetitle);
+		AssertJUnit.assertEquals(driver.getTitle(), pagetitle);
 		log.info("Stuck opportunities page loaded. ") ; 
 		exreport.logExtentPass("Report Page with the Opportunities that are Stuck will be displayed.") ;
 
@@ -1033,7 +1035,7 @@ Thread.sleep(10000);
 		log.info("Run Report button clicked") ;
 		Thread.sleep(3000);
 		String expPageTitle="Opportunity Report ~ Salesforce - Developer Edition";
-		Assert.assertEquals(driver.getTitle(), expPageTitle) ; 
+		AssertJUnit.assertEquals(driver.getTitle(), expPageTitle) ; 
 		log.info("Report Page with the Opportunities that satisfies the search criteria  displayed.");
 		exreport.logExtentPass("Report Page with the Opportunities that satisfies the search criteria displayed.") ; 
 		
@@ -1048,7 +1050,7 @@ Thread.sleep(10000);
 		Thread.sleep(4000);
 		String pageTitle=driver.getTitle();
 		String expectedTitle = "Leads: Home ~ Salesforce - Developer Edition";
-		Assert.assertEquals(expectedTitle, pageTitle);
+		AssertJUnit.assertEquals(expectedTitle, pageTitle);
 		
 	}
 		@Test		
@@ -1105,7 +1107,7 @@ Thread.sleep(10000);
 		log.info("Logout link clicked..");
 		Thread.sleep(5000);
 		
-		Assert.assertEquals(driver.getTitle(), "Login | Salesforce") ;
+		AssertJUnit.assertEquals(driver.getTitle(), "Login | Salesforce") ;
 		log.info("Logout sucessful") ; 
 		
 		Thread.sleep(2000); 
@@ -1163,7 +1165,7 @@ Thread.sleep(10000);
 		
 		String pageTitle=driver.getTitle();
 		String expectedTitle = "Leads ~ Salesforce - Developer Edition";
-		Assert.assertEquals(expectedTitle, pageTitle);
+		AssertJUnit.assertEquals(expectedTitle, pageTitle);
 		
 
 		Select view1 = new Select(driver.findElement(By.xpath("//select[@id='00BDp000008EzCf_listSelect']")));
@@ -1172,7 +1174,7 @@ Thread.sleep(10000);
 		log.info("Selected option = " + selected) ; 
 		
 
-		Assert.assertEquals(selected, "Today's Leads") ; 
+		AssertJUnit.assertEquals(selected, "Today's Leads") ; 
 		
 		log.info("Today's Leads page loaded ") ; 
 		exreport.logExtentPass("Today's Leads page loaded ")  ; 
@@ -1193,7 +1195,7 @@ Thread.sleep(10000);
 		driver.findElement(By.xpath("//input[@name='new']")).click();
 		log.info("New button clicked") ; 
 		Thread.sleep(3000);
-		Assert.assertEquals(driver.getTitle(), "Lead Edit: New Lead ~ Salesforce - Developer Edition") ; 
+		AssertJUnit.assertEquals(driver.getTitle(), "Lead Edit: New Lead ~ Salesforce - Developer Edition") ; 
 		log.info("New Lead creation page  opened  . ") ; 
 		exreport.logExtentPass("New Lead creation page  opened  . ");
 		String lastname="ABCD";
@@ -1203,12 +1205,12 @@ Thread.sleep(10000);
 		
 		Thread.sleep(4000);
 		String pagetitle = "Lead: "+lastname+" ~ Salesforce - Developer Edition" ; 
-		Assert.assertEquals(driver.getTitle(), pagetitle) ; 
+		AssertJUnit.assertEquals(driver.getTitle(), pagetitle) ; 
 		log.info("Newly created page with the new view is opened.") ; 
 		
 		String viewlabel = driver.findElement(By.xpath("//div[@id='contactHeaderRow']//h2")).getText();
 		
-		Assert.assertEquals(viewlabel, lastname);
+		AssertJUnit.assertEquals(viewlabel, lastname);
 		log.info("PASS >> new lead should be saved and the newly created lead view page should be opened") ;
 		exreport.logExtentPass("new lead should be saved and the newly created lead view page should be opened");
 			
@@ -1224,7 +1226,7 @@ Thread.sleep(10000);
 		Thread.sleep(4000);
 		String pageTitle=driver.getTitle();
 		String expectedTitle = "Contacts: Home ~ Salesforce - Developer Edition";
-		Assert.assertEquals(expectedTitle, pageTitle);
+		AssertJUnit.assertEquals(expectedTitle, pageTitle);
 	}
 
 	
@@ -1238,7 +1240,7 @@ Thread.sleep(10000);
 		driver.findElement(By.xpath("//td[@class='pbButton']/input[@name='new']")).click();
 		log.info("New button clicked") ; 
 		Thread.sleep(5000);
-		Assert.assertEquals(driver.getTitle(), "Contact Edit: New Contact ~ Salesforce - Developer Edition") ; 
+		AssertJUnit.assertEquals(driver.getTitle(), "Contact Edit: New Contact ~ Salesforce - Developer Edition") ; 
 		log.info("New Contact home page  displayed") ; 
 		exreport.logExtentPass("New Contact home page  displayed") ; 
 		String lastname = "MylastnameB" ; 
@@ -1252,7 +1254,7 @@ Thread.sleep(10000);
 		String expectedTitle = "Contact: "+lastname+" ~ Salesforce - Developer Edition" ; 
 		
 		String displayedLastname = driver.findElement(By.xpath("//div[@class='textBlock']/h2")).getText();
-		Assert.assertEquals(displayedLastname, lastname) ; 
+		AssertJUnit.assertEquals(displayedLastname, lastname) ; 
 		log.info("New contact created") ; 
 		exreport.logExtentPass("New contact created");
 		
@@ -1275,7 +1277,7 @@ Thread.sleep(10000);
 		driver.findElement(By.xpath("//span[@class='bFilter']//a[text()='Create New View']")).click();
 		log.info("create new view clicked");
 		Thread.sleep(4000);
-		Assert.assertEquals(driver.getTitle(), "Contacts: Create New View ~ Salesforce - Developer Edition") ;
+		AssertJUnit.assertEquals(driver.getTitle(), "Contacts: Create New View ~ Salesforce - Developer Edition") ;
 		log.info("Create new view page opened");
 		String viewname = "MyNewViewFriday";
 		driver.findElement(By.xpath("//input[@id='fname']")).sendKeys(viewname);
@@ -1287,10 +1289,10 @@ Thread.sleep(10000);
 		driver.findElement(By.xpath("//div[@class='pbHeader']//input[@name='save']")).click();
 		log.info("Save button clicked") ; 
 		Thread.sleep(3000);
-		Assert.assertEquals(driver.getTitle(), "Contacts ~ Salesforce - Developer Edition")  ;
+		AssertJUnit.assertEquals(driver.getTitle(), "Contacts ~ Salesforce - Developer Edition")  ;
 		Select viewdropdown = new Select(driver.findElement(By.xpath("//select[@name='fcf']"))) ; 
 		String newviewname = viewdropdown.getFirstSelectedOption().getText();
-		Assert.assertEquals(newviewname, viewname) ;
+		AssertJUnit.assertEquals(newviewname, viewname) ;
 		
 		exreport.logExtentPass("Contacts Home page is opened. Created View name is displayed in drop down in that page by defalut. ") ; 
 		}
@@ -1307,7 +1309,7 @@ Thread.sleep(10000);
 		log.info(" Recently Created , selected from the view dropdown.");
 		Thread.sleep(3000);
 		String viewname=viewdropdown.getFirstSelectedOption().getText();
-		Assert.assertEquals("Recently Created", viewname)  ;
+		AssertJUnit.assertEquals("Recently Created", viewname)  ;
 		exreport.logExtentPass("Recently Created view is displayed");
 		
 	}
@@ -1325,7 +1327,7 @@ Thread.sleep(10000);
 		log.info("My Contacts selected from the view dropdown.");
 		Thread.sleep(3000);
 		String viewname=viewdropdown.getFirstSelectedOption().getText();
-		Assert.assertEquals("My Contacts", viewname)  ;
+		AssertJUnit.assertEquals("My Contacts", viewname)  ;
 		exreport.logExtentPass("My Contacts view is displayed");
 		
 	}
@@ -1345,7 +1347,7 @@ Thread.sleep(10000);
 		log.info("Contact name clicked") ; 
 		String expectedTitle = "Contact: "+contactname+" ~ Salesforce - Developer Edition";
 		Thread.sleep(3000);
-		Assert.assertEquals(driver.getTitle(), expectedTitle) ; 
+		AssertJUnit.assertEquals(driver.getTitle(), expectedTitle) ; 
 		exreport.logExtentPass("Contact Page related to "+contactname+", displayed ");
 		
 		
@@ -1363,7 +1365,7 @@ Thread.sleep(10000);
 		driver.findElement(By.xpath("//span[@class='bFilter']//a[text()='Create New View']")).click();
 		log.info("create new view clicked");
 		Thread.sleep(4000);
-		Assert.assertEquals(driver.getTitle(), "Contacts: Create New View ~ Salesforce - Developer Edition") ;
+		AssertJUnit.assertEquals(driver.getTitle(), "Contacts: Create New View ~ Salesforce - Developer Edition") ;
 		log.info("Create new view page opened");
 		
 		WebElement uniqueview = driver.findElement(By.xpath("//input[@id='devname']"));
@@ -1379,7 +1381,7 @@ Thread.sleep(10000);
 		WebElement error = driver.findElement(By.xpath("//td[@class='dataCol']//input[@id='fname']//following-sibling::div")) ; 
 		String errormessage = error.getText();
 		log.info("Error message printted - "+errormessage);
-		Assert.assertEquals("Error: You must enter a value", errormessage) ; 
+		AssertJUnit.assertEquals("Error: You must enter a value", errormessage) ; 
 		
 	}
 	
@@ -1401,7 +1403,7 @@ Thread.sleep(10000);
 		driver.findElement(By.xpath("//span[@class='bFilter']//a[text()='Create New View']")).click();
 		log.info("create new view clicked");
 		Thread.sleep(4000);
-		Assert.assertEquals(driver.getTitle(), "Contacts: Create New View ~ Salesforce - Developer Edition") ;
+		AssertJUnit.assertEquals(driver.getTitle(), "Contacts: Create New View ~ Salesforce - Developer Edition") ;
 		log.info("Create new view page opened");
 		String viewname = "ABCDEFG";
 		driver.findElement(By.xpath("//input[@id='fname']")).sendKeys(viewname);
@@ -1413,7 +1415,7 @@ Thread.sleep(10000);
 		driver.findElement(By.xpath("//div[@class='pbHeader']//input[@name='cancel']")).click();
 		log.info("cancel button clicked") ; 
 		Thread.sleep(3000);
-		Assert.assertEquals(driver.getTitle(), "Contacts: Home ~ Salesforce - Developer Edition")  ;
+		AssertJUnit.assertEquals(driver.getTitle(), "Contacts: Home ~ Salesforce - Developer Edition")  ;
 		Select viewdropdown = new Select(driver.findElement(By.xpath("//select[@name='fcf']"))) ; 
 		String newviewname = viewdropdown.getFirstSelectedOption().getText();
 		Assert.assertNotEquals(newviewname, viewname) ;
@@ -1437,7 +1439,7 @@ Thread.sleep(10000);
 		log.info("new button clicked") ; 
 		
 		Thread.sleep(3000);
-		Assert.assertEquals(driver.getTitle(), "Contact Edit: New Contact ~ Salesforce - Developer Edition") ; 
+		AssertJUnit.assertEquals(driver.getTitle(), "Contact Edit: New Contact ~ Salesforce - Developer Edition") ; 
 		log.info("Contact Edit: New Contact ~ Salesforce - Developer Edition") ; 
 		exreport.logExtentPass("Contact Edit: New Contact ~ Salesforce - Developer Edition") ; 
 		
@@ -1448,7 +1450,7 @@ Thread.sleep(10000);
 		log.info("Save & New button clicked") ;
 		
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getTitle(), "Contact Edit: New Contact ~ Salesforce - Developer Edition");
+		AssertJUnit.assertEquals(driver.getTitle(), "Contact Edit: New Contact ~ Salesforce - Developer Edition");
 		exreport.logExtentPass("New contact is created. Contact Edit: New Contact Page is dispalyed") ;
 		
 	}

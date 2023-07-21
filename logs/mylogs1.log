@@ -3951,3 +3951,323 @@ fTC1420230606 21:42:15 INFO  [main] base.SFBase SFBase.java96 - Page Title : Log
 20230619 19:27:20 INFO  [main] tests.SalesForceAutomationScripts SalesForceAutomationScripts.java450 - Switched to new frame
 20230619 19:27:26 INFO  [main] base.SalesForceBase SalesForceBase.java175 - Waiting for page element to be clickable.. 
 20230619 19:28:08 INFO  [main] base.SalesForceBase SalesForceBase.java81 - Driver closed.
+20230716 18:06:03 INFO  [main] base.SalesForceBase SalesForceBase.java52 - ------------------ @beforeSuit started ---------------------------------
+20230716 18:06:03 INFO  [main] base.SalesForceBase SalesForceBase.java66 - ------------------ @beforeMethod started ---------------------------------
+20230716 18:06:07 INFO  [main] base.SalesForceBase SalesForceBase.java96 - Browser Firefox launched. 
+20230716 18:06:08 INFO  [main] base.SalesForceBase SalesForceBase.java71 - URL: https://login.salesforce.com/ launched.
+20230716 18:06:08 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230716 18:06:08 INFO  [main] tests.SalesForceAutomationScripts SalesForceAutomationScripts.java54 - Login page loaded
+20230716 18:06:08 INFO  [main] tests.SalesForceAutomationScripts SalesForceAutomationScripts.java59 - Userid from property file fetched = vrish1302@tekarch.com
+20230716 18:06:08 INFO  [main] tests.SalesForceAutomationScripts SalesForceAutomationScripts.java61 - Password from property file fetched = vrishali1234
+20230716 18:06:08 INFO  [main] base.SalesForceBase SalesForceBase.java195 - UserName entered.
+20230716 18:06:08 INFO  [main] base.SalesForceBase SalesForceBase.java195 - Passoword entered.
+20230716 18:06:12 INFO  [main] base.SalesForceBase SalesForceBase.java216 - Login Button clicked 
+20230716 18:06:12 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230716 18:06:53 INFO  [main] base.SalesForceBase SalesForceBase.java81 - Driver closed.
+20230720 15:35:55 INFO  [main] base.SalesForceBase SalesForceBase.java52 - ------------------ @beforeSuit started ---------------------------------
+20230720 15:35:55 INFO  [main] base.SalesForceBase SalesForceBase.java66 - ------------------ @beforeMethod started ---------------------------------
+20230720 15:36:22 INFO  [main] base.SalesForceBase SalesForceBase.java96 - Browser chrome launched. 
+20230720 15:36:22 INFO  [main] base.SalesForceBase SalesForceBase.java71 - URL: https://login.salesforce.com/ launched.
+20230720 15:36:23 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 15:36:23 INFO  [main] base.SalesForceBase SalesForceBase.java113 - Login page loaded
+20230720 15:36:33 INFO  [main] base.SalesForceBase SalesForceBase.java195 - UserName entered.
+20230720 15:36:34 INFO  [main] base.SalesForceBase SalesForceBase.java195 - Passoword entered.
+20230720 15:36:41 INFO  [main] base.SalesForceBase SalesForceBase.java216 - Login Button clicked 
+20230720 15:36:41 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 15:36:41 INFO  [main] base.SalesForceBase SalesForceBase.java131 - Login Successful.Logged in to Sales Force Home Page.
+20230720 15:36:52 INFO  [main] tests.SalesForceAutomationScripts SalesForceAutomationScripts.java1224 - Contacts tab clicked
+20230720 15:37:08 INFO  [main] base.SalesForceBase SalesForceBase.java81 - Driver closed.
+20230720 15:37:08 INFO  [main] base.SalesForceBase SalesForceBase.java66 - ------------------ @beforeMethod started ---------------------------------
+20230720 15:37:12 INFO  [main] base.SalesForceBase SalesForceBase.java96 - Browser chrome launched. 
+20230720 15:37:13 INFO  [main] base.SalesForceBase SalesForceBase.java71 - URL: https://login.salesforce.com/ launched.
+20230720 15:37:13 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 15:37:14 INFO  [main] base.SalesForceBase SalesForceBase.java113 - Login page loaded
+20230720 15:37:23 INFO  [main] base.SalesForceBase SalesForceBase.java195 - UserName entered.
+20230720 15:37:24 INFO  [main] base.SalesForceBase SalesForceBase.java195 - Passoword entered.
+20230720 15:37:27 INFO  [main] base.SalesForceBase SalesForceBase.java216 - Login Button clicked 
+20230720 15:37:27 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 15:37:32 INFO  [main] base.SalesForceBase SalesForceBase.java131 - Login Successful.Logged in to Sales Force Home Page.
+20230720 15:37:43 INFO  [main] tests.SalesForceAutomationScripts SalesForceAutomationScripts.java1224 - Contacts tab clicked
+20230720 15:37:59 INFO  [main] base.SalesForceBase SalesForceBase.java81 - Driver closed.
+20230720 15:37:59 INFO  [main] base.SalesForceBase SalesForceBase.java66 - ------------------ @beforeMethod started ---------------------------------
+20230720 15:38:03 INFO  [main] base.SalesForceBase SalesForceBase.java96 - Browser chrome launched. 
+20230720 15:38:04 INFO  [main] base.SalesForceBase SalesForceBase.java71 - URL: https://login.salesforce.com/ launched.
+20230720 15:38:04 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 15:38:05 INFO  [main] base.SalesForceBase SalesForceBase.java113 - Login page loaded
+20230720 15:38:14 INFO  [main] base.SalesForceBase SalesForceBase.java195 - UserName entered.
+20230720 15:38:15 INFO  [main] base.SalesForceBase SalesForceBase.java195 - Passoword entered.
+20230720 15:38:18 INFO  [main] base.SalesForceBase SalesForceBase.java216 - Login Button clicked 
+20230720 15:38:18 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 15:38:22 INFO  [main] base.SalesForceBase SalesForceBase.java131 - Login Successful.Logged in to Sales Force Home Page.
+20230720 15:38:33 INFO  [main] tests.SalesForceAutomationScripts SalesForceAutomationScripts.java1224 - Contacts tab clicked
+20230720 15:38:37 INFO  [main] tests.SalesForceAutomationScripts SalesForceAutomationScripts.java1309 -  Recently Created , selected from the view dropdown.
+20230720 15:38:50 INFO  [main] base.SalesForceBase SalesForceBase.java81 - Driver closed.
+20230720 15:38:50 INFO  [main] base.SalesForceBase SalesForceBase.java66 - ------------------ @beforeMethod started ---------------------------------
+20230720 15:38:55 INFO  [main] base.SalesForceBase SalesForceBase.java96 - Browser chrome launched. 
+20230720 15:38:56 INFO  [main] base.SalesForceBase SalesForceBase.java71 - URL: https://login.salesforce.com/ launched.
+20230720 15:38:56 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 15:38:57 INFO  [main] base.SalesForceBase SalesForceBase.java113 - Login page loaded
+20230720 18:10:59 INFO  [main] base.SalesForceBase SalesForceBase.java52 - ------------------ @beforeSuit started ---------------------------------
+20230720 18:10:59 INFO  [main] base.SalesForceBase SalesForceBase.java66 - ------------------ @beforeMethod started ---------------------------------
+20230720 18:11:57 INFO  [main] base.SalesForceBase SalesForceBase.java52 - ------------------ @beforeSuit started ---------------------------------
+20230720 18:11:57 INFO  [main] base.SalesForceBase SalesForceBase.java66 - ------------------ @beforeMethod started ---------------------------------
+20230720 18:12:04 INFO  [main] base.SalesForceBase SalesForceBase.java96 - Browser chrome launched. 
+20230720 18:12:05 INFO  [main] base.SalesForceBase SalesForceBase.java71 - URL: https://login.salesforce.com/ launched.
+20230720 18:12:05 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 18:12:06 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java19 - Login page loaded
+20230720 18:12:16 INFO  [main] base.SalesForceBase SalesForceBase.java81 - Driver closed.
+20230720 18:12:53 INFO  [main] base.SalesForceBase SalesForceBase.java52 - ------------------ @beforeSuit started ---------------------------------
+20230720 18:12:54 INFO  [main] base.SalesForceBase SalesForceBase.java66 - ------------------ @beforeMethod started ---------------------------------
+20230720 18:12:59 INFO  [main] base.SalesForceBase SalesForceBase.java96 - Browser chrome launched. 
+20230720 18:13:00 INFO  [main] base.SalesForceBase SalesForceBase.java71 - URL: https://login.salesforce.com/ launched.
+20230720 18:13:00 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 18:13:00 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java20 - Login page loaded
+20230720 18:13:00 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java25 - Userid from property file fetched = vrish1302@tekarch.com
+20230720 18:13:00 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Password from property file fetched = vrishali1234
+20230720 18:13:09 INFO  [main] base.SalesForceBase SalesForceBase.java195 - UserName entered.
+20230720 18:13:10 INFO  [main] base.SalesForceBase SalesForceBase.java195 - Passoword entered.
+20230720 18:13:20 INFO  [main] base.SalesForceBase SalesForceBase.java216 - Login Button clicked 
+20230720 18:13:20 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 18:13:31 INFO  [main] base.SalesForceBase SalesForceBase.java81 - Driver closed.
+20230720 18:35:24 INFO  [main] base.SalesForceBase SalesForceBase.java52 - ------------------ @beforeSuit started ---------------------------------
+20230720 18:35:25 INFO  [main] base.SalesForceBase SalesForceBase.java66 - ------------------ @beforeMethod started ---------------------------------
+20230720 18:35:31 INFO  [main] base.SalesForceBase SalesForceBase.java96 - Browser chrome launched. 
+20230720 18:35:32 INFO  [main] base.SalesForceBase SalesForceBase.java71 - URL: https://login.salesforce.com/ launched.
+20230720 18:35:32 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 18:35:32 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java36 - Login page loaded
+20230720 18:35:41 INFO  [main] base.SalesForceBase SalesForceBase.java195 - UserName entered.
+20230720 18:35:42 INFO  [main] base.SalesForceBase SalesForceBase.java195 - Passoword entered.
+20230720 18:35:57 INFO  [main] base.SalesForceBase SalesForceBase.java81 - Driver closed.
+20230720 18:35:57 INFO  [main] base.SalesForceBase SalesForceBase.java66 - ------------------ @beforeMethod started ---------------------------------
+20230720 18:36:02 INFO  [main] base.SalesForceBase SalesForceBase.java96 - Browser chrome launched. 
+20230720 18:36:03 INFO  [main] base.SalesForceBase SalesForceBase.java71 - URL: https://login.salesforce.com/ launched.
+20230720 18:36:03 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 18:36:03 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java36 - Login page loaded
+20230720 18:36:12 INFO  [main] base.SalesForceBase SalesForceBase.java195 - UserName entered.
+20230720 18:36:13 INFO  [main] base.SalesForceBase SalesForceBase.java195 - Passoword entered.
+20230720 18:36:19 INFO  [main] base.SalesForceBase SalesForceBase.java216 - Login Button clicked 
+20230720 18:36:19 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 18:36:30 INFO  [main] base.SalesForceBase SalesForceBase.java81 - Driver closed.
+20230720 18:37:25 INFO  [main] base.SalesForceBase SalesForceBase.java52 - ------------------ @beforeSuit started ---------------------------------
+20230720 18:37:25 INFO  [main] base.SalesForceBase SalesForceBase.java66 - ------------------ @beforeMethod started ---------------------------------
+20230720 18:37:31 INFO  [main] base.SalesForceBase SalesForceBase.java96 - Browser chrome launched. 
+20230720 18:37:32 INFO  [main] base.SalesForceBase SalesForceBase.java71 - URL: https://login.salesforce.com/ launched.
+20230720 18:37:32 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 18:37:32 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java36 - Login page loaded
+20230720 18:37:41 INFO  [main] base.SalesForceBase SalesForceBase.java195 - UserName entered.
+20230720 18:37:42 INFO  [main] base.SalesForceBase SalesForceBase.java195 - Passoword entered.
+20230720 18:37:49 INFO  [main] base.SalesForceBase SalesForceBase.java216 - Login Button clicked 
+20230720 18:37:49 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 18:37:59 INFO  [main] base.SalesForceBase SalesForceBase.java81 - Driver closed.
+20230720 18:37:59 INFO  [main] base.SalesForceBase SalesForceBase.java66 - ------------------ @beforeMethod started ---------------------------------
+20230720 18:38:04 INFO  [main] base.SalesForceBase SalesForceBase.java96 - Browser chrome launched. 
+20230720 18:38:05 INFO  [main] base.SalesForceBase SalesForceBase.java71 - URL: https://login.salesforce.com/ launched.
+20230720 18:38:05 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 18:38:05 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java36 - Login page loaded
+20230720 18:38:15 INFO  [main] base.SalesForceBase SalesForceBase.java195 - UserName entered.
+20230720 18:38:15 INFO  [main] base.SalesForceBase SalesForceBase.java195 - Passoword entered.
+20230720 18:38:23 INFO  [main] base.SalesForceBase SalesForceBase.java216 - Login Button clicked 
+20230720 18:38:23 INFO  [main] base.SalesForceBase SalesForceBase.java169 - Waiting for page element to be visible. 
+20230720 18:38:33 INFO  [main] base.SalesForceBase SalesForceBase.java81 - Driver closed.
+20230720 18:40:57 INFO  [main] base.SalesForceBase SalesForceBase.java64 - ------------------ @beforeSuit started ---------------------------------
+20230720 18:40:57 INFO  [main] base.SalesForceBase SalesForceBase.java78 - ------------------ @beforeMethod started ---------------------------------
+20230720 18:41:03 INFO  [main] base.SalesForceBase SalesForceBase.java108 - Browser chrome launched. 
+20230720 18:41:04 INFO  [main] base.SalesForceBase SalesForceBase.java83 - URL: https://login.salesforce.com/ launched.
+20230720 18:41:04 INFO  [main] base.SalesForceBase SalesForceBase.java181 - Waiting for page element to be visible. 
+20230720 18:41:04 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230720 18:41:15 INFO  [main] base.SalesForceBase SalesForceBase.java207 - UserName entered.
+20230720 18:41:15 INFO  [main] base.SalesForceBase SalesForceBase.java207 - Passoword entered.
+20230720 18:41:18 INFO  [main] base.SalesForceBase SalesForceBase.java228 - Login Button clicked 
+20230720 18:41:18 INFO  [main] base.SalesForceBase SalesForceBase.java181 - Waiting for page element to be visible. 
+20230720 18:41:33 INFO  [main] base.SalesForceBase SalesForceBase.java93 - Driver closed.
+20230720 18:41:33 INFO  [main] base.SalesForceBase SalesForceBase.java78 - ------------------ @beforeMethod started ---------------------------------
+20230720 18:41:38 INFO  [main] base.SalesForceBase SalesForceBase.java108 - Browser chrome launched. 
+20230720 18:41:39 INFO  [main] base.SalesForceBase SalesForceBase.java83 - URL: https://login.salesforce.com/ launched.
+20230720 18:41:39 INFO  [main] base.SalesForceBase SalesForceBase.java181 - Waiting for page element to be visible. 
+20230720 18:41:39 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230720 18:41:50 INFO  [main] base.SalesForceBase SalesForceBase.java207 - UserName entered.
+20230720 18:41:51 INFO  [main] base.SalesForceBase SalesForceBase.java207 - Passoword entered.
+20230720 18:41:54 INFO  [main] base.SalesForceBase SalesForceBase.java228 - Login Button clicked 
+20230720 18:41:54 INFO  [main] base.SalesForceBase SalesForceBase.java181 - Waiting for page element to be visible. 
+20230720 18:42:08 INFO  [main] base.SalesForceBase SalesForceBase.java93 - Driver closed.
+20230720 19:33:35 INFO  [main] base.SalesForceBase SalesForceBase.java75 - ------------------ @beforeSuit started ---------------------------------
+20230720 19:33:36 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230720 19:33:42 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230720 19:33:43 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230720 19:33:43 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:33:44 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230720 19:33:53 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName entered.
+20230720 19:33:54 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword entered.
+20230720 19:33:55 INFO  [main] base.SalesForceBase SalesForceBase.java239 - Login Button clicked 
+20230720 19:33:55 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:34:35 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230720 19:34:35 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230720 19:34:40 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230720 19:34:41 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230720 19:34:41 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:34:41 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230720 19:34:52 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName entered.
+20230720 19:34:53 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword entered.
+20230720 19:34:59 INFO  [main] base.SalesForceBase SalesForceBase.java239 - Login Button clicked 
+20230720 19:34:59 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:35:10 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230720 19:35:10 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230720 19:35:15 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230720 19:35:15 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230720 19:35:15 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:35:16 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230720 19:35:26 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName entered.
+20230720 19:35:26 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword entered.
+20230720 19:35:28 INFO  [main] base.SalesForceBase SalesForceBase.java239 - Login Button clicked 
+20230720 19:35:28 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:36:08 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230720 19:36:08 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230720 19:36:13 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230720 19:36:14 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230720 19:36:14 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:36:14 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230720 19:36:24 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName entered.
+20230720 19:36:25 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword entered.
+20230720 19:36:26 INFO  [main] base.SalesForceBase SalesForceBase.java239 - Login Button clicked 
+20230720 19:36:26 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:37:06 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230720 19:37:06 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230720 19:37:11 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230720 19:37:12 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230720 19:37:12 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:37:12 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230720 19:37:22 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName entered.
+20230720 19:37:23 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword entered.
+20230720 19:37:25 INFO  [main] base.SalesForceBase SalesForceBase.java239 - Login Button clicked 
+20230720 19:37:25 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:37:54 INFO  [main] base.SalesForceBase SalesForceBase.java75 - ------------------ @beforeSuit started ---------------------------------
+20230720 19:37:55 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230720 19:38:01 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230720 19:38:02 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230720 19:38:02 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:38:02 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230720 19:38:12 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName:UserName entered.
+20230720 19:38:12 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword:Password entered.
+20230720 19:38:13 INFO  [main] base.SalesForceBase SalesForceBase.java239 - Login Button clicked 
+20230720 19:38:13 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:38:54 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230720 19:38:54 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230720 19:38:58 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230720 19:38:59 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230720 19:38:59 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:38:59 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230720 19:39:09 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName:vrish1302@tekarch.com entered.
+20230720 19:39:10 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword:vrishali1234 entered.
+20230720 19:39:20 INFO  [main] base.SalesForceBase SalesForceBase.java239 - Login Button clicked 
+20230720 19:39:20 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:39:31 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230720 19:39:31 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230720 19:39:35 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230720 19:39:36 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230720 19:39:36 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230720 19:39:37 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230720 19:39:46 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName:vrish1302@tekarch.com entered.
+20230720 19:39:47 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword:vrishali1234 entered.
+20230720 19:39:54 INFO  [main] base.SalesForceBase SalesForceBase.java239 - Login Button clicked 
+20230720 19:39:54 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:02:40 INFO  [main] base.SalesForceBase SalesForceBase.java75 - ------------------ @beforeSuit started ---------------------------------
+20230721 00:02:41 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230721 00:02:47 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230721 00:02:48 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230721 00:02:48 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:02:48 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230721 00:02:59 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName:UserName entered.
+20230721 00:02:59 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword:Password entered.
+20230721 00:03:09 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230721 00:03:09 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230721 00:03:14 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230721 00:03:15 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230721 00:03:15 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:03:15 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230721 00:03:17 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName:vrish1302@tekarch.com entered.
+20230721 00:03:26 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword:vrishali1234 entered.
+20230721 00:03:36 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230721 00:03:36 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230721 00:03:41 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230721 00:03:41 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230721 00:03:41 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:03:42 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230721 00:03:51 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName:vrish1302@tekarch.com entered.
+20230721 00:03:51 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword:vrishali1234 entered.
+20230721 00:04:01 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230721 00:04:01 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230721 00:04:06 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230721 00:04:07 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230721 00:04:07 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:04:07 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230721 00:04:08 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName:vrish1302@tekarch.com entered.
+20230721 00:04:17 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword:vrishali1234 entered.
+20230721 00:04:27 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230721 00:04:27 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230721 00:04:32 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230721 00:04:33 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230721 00:04:33 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:04:33 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230721 00:04:44 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName:vrish1302@tekarch.com entered.
+20230721 00:04:44 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword:vrishali1234 entered.
+20230721 00:05:53 INFO  [main] base.SalesForceBase SalesForceBase.java75 - ------------------ @beforeSuit started ---------------------------------
+20230721 00:05:53 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230721 00:05:59 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230721 00:06:00 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230721 00:06:00 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:06:01 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230721 00:06:10 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName:UserName entered.
+20230721 00:06:11 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword:Password entered.
+20230721 00:06:12 INFO  [main] base.SalesForceBase SalesForceBase.java239 - Login Button clicked 
+20230721 00:06:12 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:06:52 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230721 00:06:53 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230721 00:06:57 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230721 00:06:58 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230721 00:06:58 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:06:59 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230721 00:07:09 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName:vrish1302@tekarch.com entered.
+20230721 00:07:10 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword:vrishali1234 entered.
+20230721 00:07:13 INFO  [main] base.SalesForceBase SalesForceBase.java239 - Login Button clicked 
+20230721 00:07:13 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:07:30 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230721 00:07:30 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230721 00:07:35 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230721 00:07:36 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230721 00:07:36 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:07:36 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230721 00:07:37 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName:vrish1302@tekarch.com entered.
+20230721 00:07:39 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword:vrishali1234 entered.
+20230721 00:07:50 INFO  [main] base.SalesForceBase SalesForceBase.java239 - Login Button clicked 
+20230721 00:07:50 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:08:06 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230721 00:08:06 INFO  [main] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230721 00:08:11 INFO  [main] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230721 00:08:11 INFO  [main] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230721 00:08:11 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:08:12 INFO  [main] tests.LoginToSalesForce LoginToSalesForce.java27 - Login page loaded
+20230721 00:08:23 INFO  [main] base.SalesForceBase SalesForceBase.java218 - UserName:vrish1302@tekarch.com entered.
+20230721 00:08:24 INFO  [main] base.SalesForceBase SalesForceBase.java218 - Passoword:vrishali1234 entered.
+20230721 00:08:27 INFO  [main] base.SalesForceBase SalesForceBase.java239 - Login Button clicked 
+20230721 00:08:27 INFO  [main] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:08:43 INFO  [main] base.SalesForceBase SalesForceBase.java104 - Driver closed.
+20230721 00:44:40 INFO  [main] base.SalesForceBase SalesForceBase.java75 - ------------------ @beforeSuit started ---------------------------------
+20230721 00:44:40 INFO  [TestNG-test=TestLogin-2] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230721 00:44:40 INFO  [TestNG-test=TestLogin-1] base.SalesForceBase SalesForceBase.java89 - ------------------ @beforeMethod started ---------------------------------
+20230721 00:45:05 INFO  [TestNG-test=TestLogin-2] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230721 00:45:06 INFO  [TestNG-test=TestLogin-1] base.SalesForceBase SalesForceBase.java119 - Browser chrome launched. 
+20230721 00:45:07 INFO  [TestNG-test=TestLogin-2] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230721 00:45:07 INFO  [TestNG-test=TestLogin-2] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:45:07 INFO  [TestNG-test=TestLogin-1] base.SalesForceBase SalesForceBase.java94 - URL: https://login.salesforce.com/ launched.
+20230721 00:45:07 INFO  [TestNG-test=TestLogin-1] base.SalesForceBase SalesForceBase.java208 - waitTillPageLoads::Waiting for page with title - Login | Salesforce to be loaded. 
+20230721 00:45:07 INFO  [TestNG-test=TestLogin-1] base.SalesForceBase SalesForceBase.java192 - Waiting for page element to be visible. 
+20230721 00:45:07 INFO  [TestNG-test=TestLogin-2] tests.LoginToSalesForce LoginToSalesForce.java91 - Login page loaded
+20230721 00:45:07 INFO  [TestNG-test=TestLogin-1] tests.LoginToSalesForce LoginToSalesForce.java58 - Login Page loaded.
+20230721 00:45:07 INFO  [TestNG-test=TestLogin-2] tests.LoginToSalesForce LoginToSalesForce.java96 - Userid from property file fetched = vrish1302@tekarch.com
+20230721 00:45:07 INFO  [TestNG-test=TestLogin-2] tests.LoginToSalesForce LoginToSalesForce.java98 - Password from property file fetched = vrishali1234
+20230721 00:45:18 INFO  [TestNG-test=TestLogin-1] base.SalesForceBase SalesForceBase.java218 - UserName:vrish1302@tekarch.com entered.
+20230721 00:45:18 INFO  [TestNG-test=TestLogin-2] base.SalesForceBase SalesForceBase.java218 - UserName:vrish1302@tekarch.com entered.
+20230721 00:45:18 INFO  [TestNG-test=TestLogin-1] base.SalesForceBase SalesForceBase.java218 - Passoword: entered.
+20230721 00:45:19 INFO  [TestNG-test=TestLogin-2] base.SalesForceBase SalesForceBase.java218 - Passoword:vrishali1234 entered.
+20230721 00:45:30 INFO  [TestNG-test=TestLogin-1] base.SalesForceBase SalesForceBase.java239 - Login Button clicked 
+20230721 00:45:40 INFO  [TestNG-test=TestLogin-2] base.SalesForceBase SalesForceBase.java104 - Driver closed.

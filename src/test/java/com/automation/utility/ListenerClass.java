@@ -19,7 +19,7 @@ public class ListenerClass implements ITestListener {
 	System.out.println(("onTestStart event appeared "));
 	String methodName = result.getMethod().getMethodName() ; 
 	System.out.println("Method name = "+ methodName);
-	ExtentReportObj.startSingleTestExtentReport(methodName);
+	ExtentReportObj.createNewTest(methodName);
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -27,25 +27,25 @@ public class ListenerClass implements ITestListener {
 		String methodName = result.getMethod().getMethodName() ;
 		System.out.println("Method name = "+ methodName);
 		ExtentReportObj.logExtentPass(methodName);
-	//	ExtentReportObj.endSingleTestExtentReport(); 
+	 
 	}
 
 	public void onTestFailure(ITestResult result) {
 		System.out.println(("onTestFailure event appeared "));
 		ExtentReportObj.logExtentFail(result.getMethod().getMethodName());
-	//	ExtentReportObj.endSingleTestExtentReport();
-		
 	}
 
 	public void onTestSkipped(ITestResult result) {
 		System.out.println(("onTestSkipped event appeared "));
+		System.out.println(result.getSkipCausedBy());
+		//ExtentReportObj.logExtentSkip(result.getSkipCausedBy();
 		ExtentReportObj.logExtentSkip(result.getMethod().getMethodName());
 		
 	}
 
 	public void onTestFailedWithTimeout(ITestResult result) {
 		System.out.println(("onTestFailedWithTimeout event appeared "));
-	//	ExtentReportObj.endSingleTestExtentReport();
+	
 		
 	}
 

@@ -1,11 +1,13 @@
 package com.automation.base;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,11 +21,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.automation.tests.SalesForceAutomationScripts;
+import com.automation.utility.ExcelReadWriteData;
 import com.automation.utility.ExtentReportUtility;
 import com.automation.utility.PropertiesUtility;
 import com.aventstack.extentreports.ExtentReports;
@@ -44,6 +48,25 @@ public class SalesForceBase {
 	public static  WebDriver driver =null ;
 	protected static Logger log;
 	protected static ExtentReportUtility exreport ; 
+	/*
+	@DataProvider (name="userAndPasswordDetails")
+	public Object[][] getUsernameAndPassword() {
+		String u1="vrish1302@tekarch.com";
+		String p1="vrishali1234";
+		String u2="vrish1302@tekarch.com";
+		String p2="vrishali1234";
+		//String [][] logincredentials=new String[2][2];
+		String [][] logincredentials={ {u1,p1},{u2,p2}};
+		return logincredentials;
+	} 
+	*/
+	@DataProvider (name="userAndPasswordDetails") 
+	public Object[][] getUsernameAndPasswordFromExcel() throws InvalidFormatException, IOException {
+		ExcelReadWriteData e = new ExcelReadWriteData();
+		
+			Object [][] logincredentials= e.getSheetDataIn2DArray("valid_logindata");
+			return logincredentials;
+	}
 
 	@BeforeSuite
 	public static void beforeSuit() {
@@ -61,7 +84,7 @@ public class SalesForceBase {
 	
 	@BeforeMethod
 	@Parameters("browserName")
-	public static void beforeMethod( @Optional("Firefox")   String browName) {
+	public static void beforeMethod( @Optional("chrome")   String browName) {
 		System.out.println("------------------ @beforeMethod started ---------------------------------") ;
 		log.info("------------------ @beforeMethod started ---------------------------------") ;
 		SalesForceAutomationScripts.launchBrowser(browName ) ;
@@ -192,7 +215,7 @@ public class SalesForceBase {
 		if (element.isDisplayed()) {
 			element.clear();
 			element.sendKeys(value) ; 
-			log.info(elementname + " entered.");
+			log.info(elementname +  ":"+ value+ " entered.");
 			} 
 			else {
 				log.error("-- "+elementname + " is not displayed.");
